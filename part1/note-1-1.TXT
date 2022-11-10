@@ -30,4 +30,4 @@ IaC的相关工具和技术
         SaltStack
         Vagrant
     其中Terraform
-        专注于Manage Infra这一个领域    
+        专注于Manage Infra这一个领域
