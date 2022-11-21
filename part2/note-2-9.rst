@@ -1,8 +1,10 @@
-
+==================
 常用命令
 ==================
 
-.. code-block:: sh
+
+.. code-block:: bash
+
   terraform init
 
 | 在当前的文件夹下进行初始化
@@ -10,6 +12,7 @@
 | 当前文件夹的 .terraform\providers\registry.terraform.io\hashicorp\aws\4.39.0\linux_amd64\terraform-provider-aws_v4.39.0_x5
 
 .. code-block:: sh
+
   terraform plan
 
 | 相当于dry-run，显示变更的内容
@@ -19,6 +22,7 @@
 
 
 .. code-block:: sh
+
   terraform apply
 
 | 实施变更前
@@ -30,6 +34,7 @@
 
 
 .. code-block:: sh
+
   terraform destroy
 
 | 删除当前定义的内容
