@@ -1,0 +1,13 @@
+
+Terraform Install for
+两步
+  1. 下载可执行文件
+    - 从这里下载, https://www.terraform.io/downloads
+    - 将下载的exe文件保存到一个合适的位置
+      * 比如 c:\terraform
+
+  2. 添加PATH
+    - 将刚保存exe的文件夹添加到path
+    - 然后直接新打开一个powershell
+      * 输入 terraform version 就可以确认当前的版本
+

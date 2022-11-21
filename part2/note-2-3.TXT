@@ -22,12 +22,8 @@ What's Terraform ?
 Terraform Core Components
     Terraform executable file
         也就是上边说的       
-Configuration files
-Provider plugins
-State data
+    Configuration files
+    Provider plugins
+    State data
 
-Terraform Install
-下载可执行文件
-添加PATH
-https://www.terraform.io/downloads
 
