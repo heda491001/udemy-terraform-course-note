@@ -1,0 +1,33 @@
+Terraform ->
+    [infra as code] Tools
+
+Infrastracture as Code (IaC)
+    IaC是云技术里的一个重要的课题
+    这里的"Infrastracture"
+        指
+            - 一个虚拟机(VM)
+            - 操作系统os 和相关的配置
+            - firewall / Net config / load balancer ....
+        而不是指
+            - 实际的物理设备
+            - 硬件，如一块硬盘
+    核心内容
+        使用代码的方式, 来定义和管理infra, 
+        包括VM的创建, 配置等等
+    作用和意义
+        IaC可以解决软件运行部署时候, 环境的一致性问题
+            只要使用同一套代码, 就可以创建出一套完全相同的环境
+            之前, 则需要通过人工在Web GUI上去创建和管理
+        IaC也是DevOps的关键之一
+
+IaC的相关工具和技术
+    常见的
+        Terraform
+        Ansible
+        Cloud init
+        Chef
+        Puppet
+        SaltStack
+        Vagrant
+    其中Terraform
+        专注于Manage Infra这一个领域

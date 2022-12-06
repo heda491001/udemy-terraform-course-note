@@ -1,5 +1,0 @@
-
-课程文档
-
-https://learn-terraform-from-scratch.readthedocs.io/en/latest/
-
