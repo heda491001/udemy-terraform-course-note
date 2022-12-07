@@ -19,3 +19,7 @@ resource "aws_vpc" "vpc" {
   enable_dns_hostnames = var.enable_dns_hostnames
   tags                 = merge({ Name = "my-vpc-demo" }, local.common_tags)
 }
+
+output "vpc_id" {
+  value = aws_vpc.vpc.id
+}
