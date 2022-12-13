@@ -6,5 +6,5 @@
 export TF_DATA_DIR=./.terraform
 
 # set up a access key for the cloud provider
-export TF_VAR_access_key = "*********************"
-export TF_VAR_secret_key = "*********************"
+export TF_VAR_access_key="*********************"
+export TF_VAR_secret_key="*********************"
