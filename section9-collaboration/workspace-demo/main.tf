@@ -12,14 +12,6 @@ resource "aws_vpc" "my_vpc" {
   tags                 = merge(local.common_tags, { Name = "my-vpc-${terraform.workspace}" })
 }
 
-# Create a Subnet
-resource "aws_subnet" "my_subnet" {
-  count      = var.subnet_count[terraform.workspace]
-  vpc_id     = aws_vpc.my_vpc.id
-  cidr_block = cidrsubnet(var.vpc_cidr_block[terraform.workspace], 8, count.index)
-  tags       = merge(local.common_tags, { Name = "my-subnet-${terraform.workspace}-${count.index}" })
-}
-
 terraform {
   required_providers {
     aws = {
@@ -27,7 +19,12 @@ terraform {
       version = "~> 4.16"
     }
   }
-
   required_version = ">= 1.2.0"
+
+  backend "consul" {
+    address = "localhost:8500"
+    scheme  = "http"
+    path    = "test/terraform.tfstate"
+  }
 }
 
